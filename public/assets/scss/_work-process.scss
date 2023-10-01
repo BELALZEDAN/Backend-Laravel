@@ -1,0 +1,72 @@
+.work-process-section {
+	padding:  180px 0px 90px;
+	.work-process-content {
+		padding-top: 58px;
+	}
+}
+.work-process-icon-text {
+	.work-process-text {
+		.work-process-plus {
+			width: 60px;
+			height: 60px;
+			margin: 0 auto;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 60px;
+			border-radius: 100%;
+			margin-bottom: 40px;
+			font-family: $heading;
+			border: 2px solid #f2f2f2;
+			transition: .3s all ease-in-out;
+		}
+		h3 {
+			font-size: 24px;
+			font-weight: 700;
+			padding-bottom: 22px;
+			transition: .3s all ease-in-out;
+			a {
+				transition: none;
+			}
+		}
+	}
+	.work-process-icon {
+		line-height: 1;
+		margin-top: 35px;
+		transition: .7s all ease-in-out;
+		i {
+			font-size: 70px;
+			color: $base-color;
+		}
+	}
+	&:hover {
+		.work-process-plus {
+			border: 2px solid $base-color;
+		}
+	}
+	&:hover {
+		.work-process-icon {
+			transform: rotate(360deg);
+		}
+		.work-process-text {
+			h3 {
+				color: $base-color;
+			}
+		}
+	}
+}
+.dark-home {
+	.work-process-section {
+		background-color: $body-color;
+		.work-process-icon-text {
+			color: #fff;
+			.work-process-plus {
+				border: 2px solid rgba(214, 202, 202, 0.16);
+			}
+			&:hover {
+				.work-process-plus {
+					border: 2px solid $base-color;
+				}
+			}
+		}
+	}
+}

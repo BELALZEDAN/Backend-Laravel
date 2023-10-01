@@ -1,0 +1,59 @@
+.client-area-section {
+	padding: 0px 180px 40px;
+	.client-slide-area {
+		.client-img {
+			img {
+				filter: grayscale(1);
+				transition: .4s all ease-in-out;
+				&:hover {
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+}
+.client-area-2 {
+	padding-bottom: 5px;
+}
+/*Home page 3 (Client Section)*/
+/*----------------------------------------------------*/
+.client-section-2 {
+	z-index: 1;
+	padding: 118px 0px 105px;
+	.section-title {
+		.title-tag,h2 {
+			color: #fff;
+		}
+	}
+	&:before,
+	&:after {
+		top: 0;
+		content: '';
+		width: 100%;
+		z-index: -2;
+		height: 390px;
+		position: absolute;
+		background-image: url(../img/banner/cbg2.jpg);
+	}
+	&:after {
+		z-index: -1;
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0.85);
+	}
+	.client-content-2 {
+		padding: 60px 115px 0px 115px;
+		.client-img {
+			box-shadow: 0px 8px 16px 0px rgba(50, 50, 50, 0.04);
+		}
+		.client-slide-area {
+			.owl-stage-outer {
+				padding: 15px;
+			}
+		}
+	}
+}
+.dark-home { 
+	.client-area-section {
+		background-color: $body-color;
+	}
+}

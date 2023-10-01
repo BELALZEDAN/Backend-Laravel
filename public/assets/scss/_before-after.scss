@@ -1,0 +1,120 @@
+.before-after-section {
+	z-index: 1;
+	padding: 118px 0px 45px;
+	&:after {
+		top: 0;
+		left: 0;
+		content: '';
+		z-index: -1;
+		width: 100%;
+		height: 570px;
+		position: absolute;
+		background-color: #f9f9f9;
+	}
+	.before-after-content {
+		padding: 110px 70px;
+		background-color: #fff;
+		box-shadow: 0px 8px 16px 0px rgba(167, 167, 167, 0.08);
+		.title-text-details {
+			padding-bottom: 35px
+		}
+		.before-after-list {
+			display: inline-block;
+			margin-bottom: 18px;
+			li {
+				font-size: 18px;
+				font-weight: 500;
+				padding-left: 60px;
+				position: relative;
+				margin-bottom: 25px;
+				&:before {
+					@extend%circle-plus;
+					left:  0;
+					width: 30px;
+					height: 30px;
+					font-size: 10px;
+					line-height: 26px;
+					transition: .3s all ease-in-out;
+				}
+				&:hover {
+					&:before {
+						color: #fff;
+						background-color: $base-color;
+					}
+				}
+			}
+		}
+		.archi-btn {
+			@extend%radius-button60;
+			@extend%btn-hover;
+			background-color: $base-color;
+			box-shadow: 0px 8px 16px 0px rgba(163, 204, 1, 0.2);
+			i {
+				font-size: 10px;
+				margin-left: 10px;
+			}
+			a {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+	.img-compare-area {
+		top: 120px;
+		width: 620px;
+		right: -125px;
+		position: absolute;
+		.twentytwenty-handle {
+			width: 80px;
+			border: none;
+			height: 80px;
+			box-shadow: none;
+			margin-left: -40px;
+			background-color: $base-color;
+		}
+		.twentytwenty-horizontal .twentytwenty-handle:before,
+		.twentytwenty-horizontal .twentytwenty-handle:after,
+		.twentytwenty-after-label,
+		.twentytwenty-before-label {
+			display: none;
+		}
+
+	}
+}
+.dark-home {
+	.before-after-section {
+		background-color: $body-color;
+		&:after { 
+			opacity: 0.941;
+			z-index: -1;
+			background-color: rgb(42, 42, 42);
+		}
+		&:before {
+			top: 0;
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 570px;
+			z-index: -2;
+			position: absolute;
+			background-image: url(../img/banner/babg1.jpg);
+		}
+		.before-after-content {
+			box-shadow: none;
+			padding: 0;
+			background-color: transparent;
+			.section-title {
+				margin: 0 auto;
+				max-width: 530px;
+				h2 {
+					color: #fff;
+				}
+			}
+		}
+		.img-compare-area {
+			width: 100%;
+			position: static;
+			padding-top: 60px;
+		}
+	}
+}

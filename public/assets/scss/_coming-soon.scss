@@ -1,0 +1,36 @@
+.coming-soon-content {
+	padding: 110px 0px 65px;
+	h2 {
+		font-size: 72px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 24px;
+	}
+}
+.coming-countdown {
+	padding-bottom: 170px;
+	li {
+		margin: 0px 35px;
+		span {
+			display: block;
+			font-weight: 700;
+		}
+		&:nth-child(even) {
+			transform: translateY(60px);
+		}
+		.arch-count-down-number {
+			width: 210px;
+			height: 210px;
+			font-size: 60px;
+			line-height: 210px;
+			letter-spacing: 2px;
+			border-radius: 100%;
+			font-family: $heading;
+			border: 10px solid $base-color;
+		}
+		.count-unit {
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,0 +1,250 @@
+.service-section {
+	padding: 115px 0px 115px;
+	z-index: 1;
+	&:after {
+		top: 0;
+		left: 0;
+		width: 100%;
+		content: '';
+		z-index: -1;
+		height: 100%;
+		position: absolute;
+		background-image: linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(249,249,249) 100%);
+	}
+	.section-title  {
+		.title-water-print {
+			-webkit-text-stroke-color: #ededed;
+		}
+	}
+	.service-content {
+		padding-top: 60px;
+		.col-lg-4:nth-child(2) {
+			.service-inner-box {
+				background-color: $body-color;
+				.service-text { 
+					h3,p {
+						color: #fff;
+					}
+				}
+			}
+		}
+		.col-lg-4:nth-child(3) {
+			.service-inner-box {
+				background-color: $base-color-2;
+				.service-serial-number { 
+					-webkit-text-stroke-color: #fff;
+				}
+				.service-text h3,p,
+				.service-icon i { 
+					color: #fff;
+				}
+				&:after {
+					background-color: $body-color;
+				}
+			}
+		}
+	}
+}
+.service-inner-box {
+	padding: 48px 40px;
+	background-color: #fff;
+	transition: .3s all ease-in-out;
+	box-shadow: 0px 8px 16px 0px rgba(50, 50, 50, 0.04);
+	.service-serial-number {
+		font-size: 80px;
+		line-height: 1;
+		font-weight: 500;
+		margin-bottom: 8px;
+		font-family: $heading;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #b1b1b1;
+	}
+	.service-text {
+		margin-bottom: 35px;
+		h3 {
+			font-size: 30px;
+			font-weight: 700;
+			padding-bottom: 20px;
+		}
+	}
+	.service-icon {
+		line-height: 1;
+		i {
+			font-size: 70px;
+			color: $base-color-2;
+		}
+	}
+	&:after {
+		bottom: 0;
+		width: 0%;
+		left: 0;
+		height: 4px;
+		content: '';
+		position: absolute;
+		transition: .5s all ease-in-out;
+		background-color: $base-color-2;
+	}
+	&:hover {
+		margin-top: -20px;
+		&:after {
+			width: 100%;
+		} 
+	}
+}
+/*Home page 2 (Servcie Section)*/
+/*----------------------------------------------------*/
+.service-section-2 {
+	z-index: 1;
+	top: -85px;
+	overflow: visible;
+}
+.service-content-2 {
+	.service-inner-box {
+		.service-icon { 
+			i {
+				color: #323232;
+			}
+		}
+		.service-text h3,p,
+		.service-icon i { 
+			transition: .3s all ease-in-out;
+		}
+		.service-text h3 a {
+			transition: none;
+		}
+		&:hover {
+			background-color: $body-color;
+			&:after {
+				display: none;
+			}
+			.service-text h3,p,
+			.service-icon i {
+				color: #fff;
+			}
+		}
+	}
+	.col-lg-4 {
+		&:nth-child(3) .service-inner-box {
+			z-index: 1;
+			&:before {
+				top: 0;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				opacity: .05;
+				position: absolute;
+				background-size: cover;
+				background-image:url(../img/banner/srbg.png);
+			}
+		}
+	}
+}
+/*Service Page (Servcie Section)*/
+/*----------------------------------------------------*/
+.service-page-section {
+	padding: 120px 0px 90px;
+}
+.service-page-content {
+	.service-content-2  {
+		.service-inner-box {
+			padding: 55px 40px;
+			margin-bottom: 30px;
+			&:hover {
+				margin-top: 0;
+			}
+			.service-icon i {
+				color: $base-color;
+			}
+		}
+	}
+}
+.about-service-page-section {
+	padding: 110px 0px;
+	background-color: #f9f9f9;
+	.service-about-img {
+		top: 0;
+		left: 0;
+	}
+	.about-right-text {
+		max-width: 570px;
+		float: right;
+	}
+	.about-content-2 {
+		.about-right-text {
+			padding-top: 0;
+		} 
+		.about-btn {
+			a {
+				&:nth-child(1) { 
+					background-color: $base-color;
+				}
+			}
+		}
+	}
+}
+.service-page-work-process {
+	z-index: 1;
+	padding: 110px 0px 0px 0px;
+	.service-work-process-inner {
+		margin: 0 auto;
+		max-width: 1420px;
+		padding-bottom: 110px;
+		background-color: #fff;
+	}
+	&:after {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: -1;
+		content: '';
+		height: 200px;
+		position: absolute;
+		background-color: #f9f9f9;
+	}
+}
+.service-price-section {
+	z-index: 1;
+	padding: 110px 0px 75px;
+	&:after {
+		top: 0;
+		z-index: -1;
+		content: '';
+		height: 60%;
+		width: 100%;
+		position: absolute;
+		background-color: #f9f9f9;
+	}
+	.service-price-tab-btn {
+		right: 0;
+		top: -55px;
+		position: absolute;
+		.nav {
+			display: inherit;
+		}
+		.nav-tabs {
+			border-bottom: 0;
+		}
+		.nav-tabs .nav-item {
+			margin-bottom: 0;
+		}
+		.nav-tabs .nav-link {
+			padding: 0;
+			border: none;
+			height: 55px;
+			width: 100px;
+			border-radius: 0;
+			font-weight: 700;
+			line-height: 55px;
+			text-align: center;
+			font-family: $heading;
+			background-color: #fff;
+			&.active {
+				background-color: $base-color;
+				color: #fff;
+			}
+		}
+	}
+}

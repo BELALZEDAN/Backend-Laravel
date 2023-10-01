@@ -1,0 +1,47 @@
+.newslatter-section {
+	.newslatter-content {
+		display: flex;
+	}
+	.newslatter-part {
+		float: left;
+		width: 33.33%;
+		background-color: #f9f9f9;
+		img {
+			height:  100%;
+		}
+	}
+	.newslatter-form {
+		background-color: #f9f9f9;
+		padding: 72px 80px 70px 80px;
+	}
+	.newslatter-form-area {
+		padding-top: 45px;
+		.contact-info {
+			margin-bottom: 10px;
+		}
+		input {
+			width: 100%;
+			height: 80px;
+			border: none;
+			padding-left: 80px;
+			background-color: #fff;
+		}
+		.icon-bg {
+			top: 30px;
+			left: 40px;
+			position: absolute;
+			i {
+				color: $base-color-2;
+			}
+		}
+		.sub-button {
+			button {
+				@extend%radius-button60;
+				@extend%btn-hover;
+				border: none;
+				border-radius: 0;
+				background-color: $base-color-2;
+			}
+		}
+	}
+}

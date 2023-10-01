@@ -1,0 +1,224 @@
+.portfolio-section {
+	z-index: 1;
+	overflow: visible;
+	padding: 110px 0px;
+	background-color: $body-color;
+	.custom_tab_button {
+		.nav-tabs {
+			border-bottom: none;
+		}
+		li {
+			a {
+				display: block;
+				line-height: 1;
+				color: #9a9a9a;
+				font-size: 18px;
+				font-weight: 700;
+				margin-bottom: 30px;
+				transition: .3s all ease-in-out;
+				span {
+					color: #fff;
+					font-size: 100px;
+					-webkit-text-fill-color: transparent;
+					-webkit-text-stroke-width: 1px;
+					-webkit-text-stroke-color: #fff;	
+				}
+				&.active {
+					color: $base-color;
+					span {
+						-webkit-text-fill-color: #fff;
+					}
+				}
+			}
+			&:last-child {
+				a {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.portfolio-img-content {
+		top: 0;
+		right: 0;
+		z-index: -1;
+		position: absolute;
+		&:after {
+			top: 0;
+			left: 0;
+			content: '';
+			opacity: .6;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #000000;
+		}
+	}
+}
+/*Home page 2 (Portfolio)*/
+/*----------------------------------------------------*/
+.portfolio-content-2 {
+	padding: 10px;
+	.portfolio-item-area {
+		width: 25%;
+		float: left;
+		padding: 10px;
+		.portfolio-item-text {
+			left: 0;
+			right: 0;
+			width: 80%;
+			opacity: 0;
+			bottom: 95px;
+			margin: 0 auto;
+			visibility: hidden;
+			position: absolute;
+			background-color: #fff;
+			padding: 25px 25px 20px 25px;
+			transition: .5s all ease-in-out;
+			&:after {
+				left: 50%;
+				content: '';
+				bottom: -15px;
+				position: absolute;
+				transform: translateX(-50%);
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 15px solid #fff;
+			}
+			h3 {
+				font-size: 36px;
+				font-weight: 700;
+				padding-top: 5px;
+			}
+			span {
+				font-weight: 700;
+				color: $base-color-2;
+			}
+		}
+		.portfolio-item-img {
+			overflow: hidden;
+			position: relative;
+			img {
+				transform: scale(1);
+				transition: .5s all ease-in-out;
+			}
+			&:after {
+				top: 0;
+				left: 0;
+				width: 0%;
+				content: '';
+				opacity: .8;
+				height: 100%;
+				position: absolute;
+				background-color: $body-color;
+				transition: .3s all ease-in-out;
+			}
+		}
+		&:hover {
+			.portfolio-item-text {
+				opacity: 1;
+				bottom: 55px;
+				visibility: visible;
+			}
+			.portfolio-item-img {
+				img {
+					transform: scale(1.2);
+				}
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+/*Home page 3 (Portfolio)*/
+/*----------------------------------------------------*/
+.portfolio-content-3 {
+	margin: 0 -15px;
+	padding: 100px 0px;
+	z-index: 1;
+	&:before {
+		bottom: 0;
+		content: '';
+		width: 100%;
+		z-index: -1;
+		height: 390px;
+		position: absolute;
+		background-color: $body-color;
+	}
+	.portfolio-img-text {
+		width: 20%;
+		float: left;
+		padding: 15px;
+	}
+	.portfolio-img-text {
+		&:nth-child(even){
+			transform: translateY(-40px);
+		}
+	}
+}
+.portfolio-img-text {
+	.portfolio-text-area {
+		margin-top: 38px;
+		h3,span {
+			color: #fff;
+			font-weight: 700;
+		}
+		h3 {
+			font-size: 24px;
+			padding-bottom: 10px;
+		}
+		span {
+			font-size: 14px;
+			letter-spacing: 3px;
+		}
+	}
+}
+/*Portfolio Page (Portfolio)*/
+/*----------------------------------------------------*/
+.portfolio-page-section {
+	padding: 120px 0px 90px;
+}
+.portfolio-tab-button {
+	margin: 0 auto;
+	max-width: 930px;
+	padding: 15px 0px;
+	margin-bottom: 60px;
+	background-color: $body-color;
+	.nav-gallery {
+		li {
+			color: #fff;
+			font-size: 18px;
+			font-weight: 700;
+			cursor: pointer;
+			padding: 15px 30px;
+			border: 2px solid $body-color;
+			&.filtr-active {
+				border: 2px solid #474747;
+			}
+		}
+	}
+}
+.portfolio-page-content {
+	.portfolio-content-2{
+		padding: 0;
+		.portfolio-item-area {
+			padding: 0;
+			float: none;
+			width: 100%;
+			margin-bottom: 30px;
+			&:hover {
+				.portfolio-item-text {
+					bottom: 42px;
+				}
+			}
+			.portfolio-item-text span {
+				color: $base-color;
+			}
+		}
+	}
+}
+.dark-home {
+	.portfolio-section {
+		background-color: #2a2a2a;
+	}
+}

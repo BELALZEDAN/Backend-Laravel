@@ -1,0 +1,25 @@
+.breadcrumb-section {
+  padding: 235px 0px 130px; }
+  .breadcrumb-section .breadcrumb-content .breadcrumb-title {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700; }
+  .breadcrumb-section .breadcrumb-content .breadcrumb {
+    display: inline-block;
+    background-color: transparent; }
+    .breadcrumb-section .breadcrumb-content .breadcrumb li {
+      position: relative;
+      padding: 0px 10px; }
+      .breadcrumb-section .breadcrumb-content .breadcrumb li a {
+        color: #fff; }
+    .breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item.active {
+      color: #fff; }
+    .breadcrumb-section .breadcrumb-content .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      top: 5px;
+      left: -1px;
+      width: 2px;
+      padding: 0;
+      content: "";
+      height: 14px;
+      position: absolute;
+      background-color: #fff; }

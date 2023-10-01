@@ -1,0 +1,297 @@
+.team-section {
+	.team-member-area {
+		padding: 60px 80px 90px 80px;
+	}
+	#team-slider-id  {
+		.owl-stage-outer {
+			padding-bottom: 30px;
+		}
+		.owl-nav {
+			right: 16%;
+			top: -180px;
+			position: absolute;
+			.owl-next,
+			.owl-prev {
+				width: 80px;
+				height: 50px;
+				margin: 0 5px;
+				font-weight: 700;
+				line-height: 50px;
+				text-align: center;
+				display: inline-block;
+				font-family: $heading;
+				border: 2px solid #f1f1f1;
+				transition: .3s all ease-in-out;
+				&:hover {
+					color: #fff;
+					border: 2px solid $base-color-2;
+					background-color: $base-color-2;
+				}	
+			}
+		}
+	}
+}
+.team-member-img-text {
+	.team-member-img {
+		overflow: hidden;
+		z-index: 1;
+		img {
+			transition: .5s all ease-in-out;
+			transform: scale(1.1);
+		}
+		&:after {
+			top: 0;
+			left: 0;
+			width: 0;
+			z-index: 0;
+			content: '';
+			opacity: .7;
+			height: 100%;
+			position: absolute;
+			background-color: $body-color;
+			transition: .3s all ease-in-out;
+		}
+	}
+	.mem-social-btn {
+		top: 0;
+		right: 0;
+		z-index: 1;
+		&:before {
+			right: 0;
+			width: 50px;
+			color: #fff;
+			content: '+';
+			height: 50px;
+			cursor: pointer;
+			font-weight: 700;
+			line-height: 50px;
+			text-align: center;
+			position: absolute;
+			transition: .3s all ease-in-out;
+			background-color: rgba(0, 0, 0, .4);
+		}
+		&.current {
+			&:before {
+				content: 'x';
+				background-color: $base-color-2;
+			}
+			.team-member-social {
+				top: 50px;
+				opacity: 1;
+			}
+		}
+	}
+	.team-member-social {
+		right: 0;
+		top: 70px;
+		opacity: 0;
+		z-index: 1;
+		position: absolute;
+		transition: .5s all ease-in-out;
+		li {
+			width: 50px;
+			color: #fff;
+			height: 50px;
+			margin-top: 6px;
+			line-height: 50px;
+			text-align: center;
+			background-color: $body-color;
+			a {
+				width: 100%;
+				display: block;
+				&:hover {
+					background-color: $base-color-2;
+				}
+			}
+		}
+	}
+	.team-member-text {
+		padding: 35px 0px;
+		transition: .3s all ease-in-out;
+		h3 {
+			font-size: 30px;
+			font-weight: 700;
+		}
+
+		span {
+			font-weight: 700;
+			color: $base-color-2;
+			font-family: $heading;
+		}
+	}
+	&:hover {
+		.team-member-text {
+			background-color: #fff;
+			box-shadow: 0px 8px 16px 0px rgba(50, 50, 50, 0.04);
+		}
+		.team-member-img {
+			img {
+				transform: scale(1);
+			}
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}
+/*Team Page (Team Member section)*/
+/*----------------------------------------------------*/
+.team-page-member-section {
+	z-index: 1;
+	padding: 200px 0px 40px;
+	&:after {
+		top: 0;
+		left: 0;
+		z-index: -1;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-image: url(../img/banner/tpbg.png);
+	}
+}
+.team-page-member-content {
+	.team-member-img-text {
+		margin: 0 auto;
+		max-width: 320px;
+		margin-bottom: 50px;
+		.team-member-text span {
+			color: $base-color;
+		}
+		.team-member-social li a {
+			&:hover {
+				background-color: $base-color;
+			}
+		}
+		.mem-social-btn.current:before {
+			background-color: $base-color;
+		}
+		&:hover {
+			.mem-social-btn { 
+				&:before {
+					background-color: $base-color;
+				}
+			}
+		}
+	}
+}
+.team-page-counter {
+	.counter-item .counter-icon i {
+		color: $base-color;
+	}
+}
+.team-page-textimonial {
+	background-color: #f9f9f9;
+	.testimonial-inner-box  {
+		background-color: #f3f3f3;
+		.testimonial-author-area span {
+			color: $base-color;
+		}
+	}
+	.testimonial-inner-box:hover .testi-rate-option .testi-rate:checked ~ .rate-value:before,
+	.testimonial-inner-box:hover .testi-rate-option .rate-value:before {
+		color: $base-color;
+	}
+}
+/*Team Details Page (Team Details section)*/
+/*----------------------------------------------------*/
+.team-details-section {
+	padding: 120px 0px;
+	.side-latter {
+		top: 0;
+		right: -125px;
+		line-height: .8;
+		color: #f5f5f5;
+		font-weight: 700;
+		font-size: 1200px;
+		font-family: $heading;
+	}
+	.team-single-img {
+		.team-appoint-btn {
+			left: 0;
+			right: 0;
+			bottom: -30px;
+			a {
+				color: #fff;
+				height: 60px;
+				width: 200px;
+				margin: 0 auto;
+				display: block;
+				font-weight: 700;
+				line-height: 60px;
+				text-align: center;
+				background-color: $base-color;
+			}
+		}
+	}
+	.team-details-text {
+		margin-left: 40px;
+		.team-details-name {
+			border-bottom: 1px solid #f5f5f5;
+			padding-bottom: 42px;
+			h3 {
+				color: #001a4b;
+				font-size: 40px;
+				font-weight: 700;
+			}
+			span {
+				font-weight: 700;
+				color: $base-color;
+			}
+		}
+		.team-member-info {
+			ul {
+				padding-top: 45px;
+				border-bottom: 2px solid #efefef;
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+			li {
+				width: 100%;
+				font-size: 18px;
+				margin-bottom: 30px;
+				.personal_icon {
+					margin-right: 30px;
+					color: $base-color;
+				}
+				span {
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+.skillset-section {
+	&.team-details-skillset {
+		background-color: #f9f9f9;
+		padding-bottom: 90px;
+		.skillset-content { 
+			box-shadow: none;
+			.skillset-img {
+				padding-top: 100px;
+			}
+		}
+		.skill-progress-bar .skill-set-percent .progress span {
+			color: $base-color;
+		}
+		.skill-progress-bar .skill-set-percent .progress-bar {
+			background-color: $base-color;
+		}
+	}
+}
+.team-details-get-qoute {
+	position: relative;
+	padding-bottom: 90px;
+	&:before {
+		top: 0;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 240px;
+		border-radius: 0;
+		position: absolute;
+		display: block !important;
+		background-color: #f9f9f9;
+	}
+}

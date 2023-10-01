@@ -1,0 +1,85 @@
+.testimonial-section {
+	padding: 105px 0px 120px;
+	.testimonial-content {
+		padding-top: 60px;
+	}
+}
+.testimonial-inner-box {
+	background-color: #f9f9f9;
+	padding: 50px 40px 40px 40px;
+	transition: .3s all ease-in-out;
+	.testimonial-rate {
+		li {
+			width: 20px;
+		}
+	}
+	.testi-rate-option {
+		.testi-rate {
+			display: none;
+		}
+		.rate-value {
+			position: relative;
+			&:before {
+				left: 0;
+				top: -10px;
+				content: '\f115';
+				cursor: pointer;
+				position: absolute;
+				font-family: Flaticon;
+			}
+		}
+		.testi-rate:checked ~ .rate-value:before {
+			content: '\f137';
+		}
+	}
+	.testimonial-top-content {
+		width: 100%;
+		padding-bottom: 10px;
+		.testimonial-review {
+			h3 {
+				font-weight: 700;
+				font-size: 24px;
+			}
+		}
+	}
+	.testimonial-text {
+		line-height: 1.75;
+		padding-bottom: 28px;
+		transition: .3s all ease-in-out;
+	}
+	.testimonial-author-area {
+		width: 100%;
+		padding: 20px;
+		background-color: #fff;
+		.testi-author-img {
+			margin-right: 20px;
+		}
+		.test-author-text {
+			padding-top: 10px;
+			h4 {
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+		span {
+			font-weight: 700;
+			color: $base-color-2;
+		}
+	}
+	&:hover {
+		margin-top: -20px;
+		background-color: $body-color;
+		.testi-rate-option .testi-rate:checked ~ .rate-value:before,
+		.testi-rate-option .rate-value:before {
+			color: $base-color-2;
+		} 
+		.testimonial-text {
+			color: #fff;
+		}
+		.testimonial-review { 
+			h3 {
+				color: #fff;
+			}
+		}
+	}
+}

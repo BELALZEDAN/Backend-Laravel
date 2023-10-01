@@ -1,0 +1,73 @@
+.counter-section {
+	padding-bottom: 135px;
+	.counter-content  {
+		&:after {
+			content: '';
+			width: 95%;
+			height: 20px;
+			left: 0;
+			right: 0;
+			bottom: -20px;
+			margin: 0 auto;
+			position: absolute;
+			background-color: #efefef;
+		}
+	}
+}
+.counter-content {
+	padding: 80px 80px 75px 80px;
+	background-color: $body-color;
+	.col-lg-3 {
+		&:nth-child(2) {
+			.counter-item {
+				padding-left: 10px;
+				.counter-icon {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+.counter-item {
+	.counter-icon {
+		line-height: 1;
+		margin-right: 7px;
+		i {
+			color: #fff;
+			font-size: 65px;
+		}
+	}
+	.counter-text {
+		overflow: hidden;
+		h3,p {
+			color: #fff;
+		}
+		h3 {
+			line-height: 1;
+			.odometer {
+				line-height: 1;
+				font-size: 50px;
+				font-weight: 500;
+				font-family: $heading;
+				.odometer-formatting-mark {
+					display: none;
+				}
+			}
+			strong {
+				top: 4px;
+				font-weight: 500;
+				font-size: 46px;
+				position: relative;
+			}
+			.count-ext {
+				position: relative;
+				top: 8px;
+			}
+		}
+		p {
+			top: -5px;
+			position: relative;
+			font-family: $heading;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.intro-video-section {
+	z-index: 1;
+	padding: 115px 0px;
+	background-size: contain;
+	.intro-bg {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		text-align: center;
+	}
+	.background-overlay {
+		opacity: .97;
+		z-index: -1;
+		background-color: #323232;
+	}
+	.section-title  {
+		margin: 0 auto;
+		max-width: 600px;
+		padding-bottom: 40px;
+		h2 {
+			color: #fff;
+		}
+	}
+	.intro-video-play {
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		margin: 0 auto;
+		border-radius: 100%;
+		background-color: $base-color-2;
+		i {
+			color: #fff;
+			font-size: 55px;
+		}
+	}
+	.intro-video-text {
+		color: #fff;
+		margin: 0 auto;
+		font-size: 24px;
+		max-width: 830px;
+		padding-top: 40px;
+	}
+}
